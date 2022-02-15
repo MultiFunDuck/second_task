@@ -11,7 +11,6 @@ interface PersonRepository : CrudRepository<Person, Int> {
 
     fun findAllByLastname(lastname: String): List<Person>
 
-
 }
 
 

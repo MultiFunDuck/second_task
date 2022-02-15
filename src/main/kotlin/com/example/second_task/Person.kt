@@ -7,7 +7,7 @@ import javax.persistence.*
 data class Person(
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int,
 
     var name: String,

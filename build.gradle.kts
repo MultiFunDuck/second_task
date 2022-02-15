@@ -21,6 +21,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-validation")
+    implementation("com.moesif.unirest:unirest-java:1.0.6")
     runtimeOnly("org.postgresql:postgresql")
 
 
