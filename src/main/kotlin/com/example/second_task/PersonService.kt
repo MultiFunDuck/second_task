@@ -42,8 +42,12 @@ class PersonServiceImp(): PersonService{
         return personRepository.findAllByLastname(lastname)
     }
 
-    override fun update(id: Int, person: Person) {
-        personRepository.save(person)
+    override fun update(id: Int, infoPerson: Person) {
+        var personToUpdate = personRepository.findById(id).get()
+        personToUpdate.id = id
+        personToUpdate.name = infoPerson.name
+        personToUpdate.lastname = infoPerson.lastname
+        personRepository.save(personToUpdate)
     }
 
     override fun delete(id: Int) {
